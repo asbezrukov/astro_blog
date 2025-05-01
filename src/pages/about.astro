@@ -1,9 +1,13 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "About Me";
 
 const happy = true;
 const finished = false;
 const goal = 3;
+const h1Color = "red";
+const h1FontSize = "4rem";
 ---
 
 <html lang="en">
@@ -13,6 +17,12 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <style define:vars={{h1Color, h1FontSize}}>
+            h1 {
+              color: var(--h1Color);
+              font-size: var(--h1FontSize);
+            }
+          </style>
 	</head>
 	<body>
         <a href="/">Home</a>
