@@ -1,25 +1,36 @@
-# Astro Starter Kit: Minimal
+# Astro Demo Tutorial
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## 💡 Project summary
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+This is my first Astro project made by [the official tutorial](https://docs.astro.build/en/tutorial/0-introduction/). It was made for a few hours. 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**What I learned from this:**
+
+- Astro page, layout and component structure is easy and scalable for fast component-based development
+- The difference between server-side and client-side building and js execution are clear and manageble
+- I could use native templates or html generation from markdown for many cases
+- Static and dynamic routing could be useful for logic separation and website' search engine optimisation.
+- If I have to use some React/Vue plugin, it'll be easy to encapsulate them to an island.
+
+Blog published with Netlify: [open published website](https://astro-blog-examlple.netlify.app/) - I didn't bother about style, my goal was to get to know with framework.
+
+**What I'll do with my new knowledge:**
+
+- I'll use Astro for my personal website, because it's fast and easy to maintaine.
+- If I have to build a simple web-site without UGC, auth and complex db queries, I'll consider to use Astro for frontend.
+- I'd like to try Astro with some backend service with REST endpoints or GraphQL. It should work smooth.
+
 
 ## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
 ├── src/
+│   ├── blog/
+│   ├── componentss/
+│   ├── layouts/
 │   └── pages/
-│       └── index.astro
 └── package.json
 ```
 
