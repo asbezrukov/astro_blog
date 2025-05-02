@@ -1,0 +1,37 @@
+---
+const { tags, tagTitle } = Astro.props;
+
+---
+
+<div>
+<h2>{tagTitle}</h2>
+<ul class="tags">
+    {tags.map((tag:any) => (
+        <li class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+        </li>
+    ))}
+</ul>
+</div>
+
+<style>
+    a {
+      color: #00539F;
+    }
+  
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding-left: 0;
+    }
+  
+    .tag {
+      margin: 0.25em;
+      border: dotted 1px #a1a1a1;
+      border-radius: .5em;
+      padding: .5em 1em;
+      font-size: 1.15em;
+      background-color: #F8FCFD;
+    }
+  </style>
